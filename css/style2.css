@@ -3,8 +3,8 @@ header{
     color: white;
 }
 .bebidas{
-    box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
-    -webkit-box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
+    box-shadow: -13px 10px 28px 23px black;
+    -webkit-box-shadow: -13px 10px 28px 23px black;
     -moz-box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
 }
 #cerveza{
