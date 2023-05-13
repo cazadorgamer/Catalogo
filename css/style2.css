@@ -2,3 +2,11 @@ header{
     background-color: black;
     color: white;
 }
+.bebidas{
+    box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
+    -webkit-box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
+    -moz-box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
+}
+#cerveza{
+ 
+}
