@@ -8,6 +8,53 @@ header{
     -moz-box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
     font-size: medium;
 }
-#cerveza{
- 
+
+@media(min-width: 412px){
+    header {
+        width: 75%;
+    }
+    
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+@media(min-width: 360px){
+    header {
+        width: 75%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+
+
+@media(min-width: 280px){
+    header {
+        width: 75%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+
+@media(min-width: 720px){
+    header {
+        width: 50%;
+    }
+    img {
+        width:25% ;
+    }
+    .bebidas{
+        width:50% ;
+        order: 1;
+    }
 }
