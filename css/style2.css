@@ -7,6 +7,8 @@ header{
     -webkit-box-shadow: -13px 10px 28px 23px gray;
     -moz-box-shadow: -13px 10px 28px 23px rgba(77,35,35,0.75);
     font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media(min-width: 412px){
