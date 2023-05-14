@@ -59,7 +59,7 @@ header{
     }
 }@media(min-width: 1080px){
     header {
-        width: 50%;
+        width: 100%;
     }
     img {
         width:25% ;
