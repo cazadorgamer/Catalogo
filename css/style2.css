@@ -11,7 +11,7 @@ header{
 
 @media(min-width: 412px){
     header {
-        width: 75%;
+        width: 100%;
     }
     
     img {
