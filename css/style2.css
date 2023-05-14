@@ -57,4 +57,14 @@ header{
         width:50% ;
         order: 1;
     }
-}
+}@media(min-width: 1080px){
+    header {
+        width: 50%;
+    }
+    img {
+        width:25% ;
+    }
+    .bebidas{
+        width:50% ;
+        order: 1;
+    }
