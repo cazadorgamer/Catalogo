@@ -1,30 +1,40 @@
-const productos=[
-  {nombre:'Cerveza palermo', Valor:460},
-  {nombre:'Manaos', valor:250},
-  {nombre:'gancia', valor:500},
-  {nombre:'coca', valor:400},
-  {nombre:'sneider', valor:300},
+// Definir un array de objetos
+var bebida = [
+  { nombre: "cerveza palermo", precio: 460 },
+  { nombre: "lata sneider", precio: 300 },
+  { nombre: "lata gancia", precio: 360 },
+  { nombre: "manaos", precio: 290 }
+];
 
-]
-const formulario=document.querySelector('#formulario');
-const boton= document.querySelector('#boton');
-const resultado = document.querySelector('#resultado')
-const filtrar=()=>{
- // console.log(formulario.value);
- resultado.innerHTML="";
- const texto=formulario.valur.toLowerCase();
-  boton.addEventListener('click',filtrar)
-  formulario.addEventListener('keyup')
-  for(let producto of productos){
-    let nombre= producto.nombre.toLowerCase();
-    if(nombre.indexOf (texto)!== 1 ){
-      resultado.innerHTML += ` <li>${producto.nombre} - Valor: ${producto.valor}</li> `
-    }
-   }
-   if(resultado.innerHTML===""){
-    resultado.innerHTML += ` <li>Producto no encontrado ...</li> `
-   }
+// Función de búsqueda y mostrar en HTML
+function buscarPersona() {
+  // Obtener el valor del input de nombre
+  var nombreBusqueda = document.getElementById("nombre-input").value;
+
+  // Buscar la persona en el array
+  var personaEncontrada = bebida.find(function(bebida) {
+    return bebida.nombre.toLowerCase() === nombreBusqueda.toLowerCase();
+  });
+
+  // Mostrar el resultado en el HTML
+  var resultadoContainer = document.getElementById("resultado-container");
+
+
+ // Mostrar el resultado en el HTML
+ var resultadoContainer = document.getElementById("resultado-container");
+ resultadoContainer.innerHTML = "";
+
+ if (personaEncontrada) {
+   var resultadoHTML = "Nombre: " + personaEncontrada.nombre + "<br>Precio: " + personaEncontrada.precio;
+   resultadoContainer.innerHTML = resultadoHTML;
+ } else {
+   resultadoContainer.innerHTML = "No se encontró ninguna persona con ese nombre.";
+ }
 }
+
+
+
+
 
 
 
