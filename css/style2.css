@@ -11,6 +11,9 @@ header{
     margin-right: auto;
 }
 
+.resultado-container{
+    border: solid black;
+}
 @media(min-width: 412px){
     header {
         width: 75%;

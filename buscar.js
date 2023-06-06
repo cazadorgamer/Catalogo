@@ -35,7 +35,7 @@ function buscarPersona() {
 
    
  } else {
-   resultadoContainer.innerHTML = "No se encontró ninguna persona con ese nombre.";
+   resultadoContainer.innerHTML = "No se encontró el producto";
  }
 }
 
