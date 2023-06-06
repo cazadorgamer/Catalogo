@@ -1,9 +1,13 @@
 // Definir un array de objetos
 var bebida = [
   { nombre: "cerveza palermo", precio: 460, Imagen: document.getElementById("imagen palermo") },
+  { nombre: "palermo", precio: 460, Imagen: document.getElementById("imagen palermo")},
   { nombre: "lata sneider", precio: 300,Imagen:document.getElementById("imagen palermo") },
+  { nombre: "sneider", precio: 300, Imagen: document.getElementById("imagen palermo")},
   { nombre: "lata gancia", precio: 360,Imagen:document.getElementById("imagen palermo") },
-  { nombre: "manaos", precio: 290,Imagen:document.getElementById("imagen palermo") }
+  { nombre: "gancia", precio: 360,Imagen:document.getElementById("imagen palermo") },
+  { nombre: "manaos", precio: 290,Imagen:document.getElementById("imagen palermo") },
+  { nombre: "coca cola", precio: 400,Imagen:document.getElementById("imagen palermo") }
 ];
 
 // Función de búsqueda y mostrar en HTML
