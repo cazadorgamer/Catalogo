@@ -51,6 +51,13 @@ main{
 div img{
     border-radius: 20 px;
 }
+<<<<<<< HEAD
+=======
+
+.resultado-container{
+    border: solid black;
+}
+>>>>>>> b50734d2f1073dbd1671aa3aa387a1e981f942cb
 @media(min-width: 412px){
     header {
         width: 75%;
