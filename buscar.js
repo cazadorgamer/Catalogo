@@ -1,9 +1,9 @@
 // Definir un array de objetos
 var bebida = [
-  { nombre: "cerveza palermo", precio: 460 },
+  { nombre: "cerveza palermo", precio: 500 },
   { nombre: "lata sneider", precio: 300 },
   { nombre: "lata gancia", precio: 360 },
-  { nombre: "manaos", precio: 290 }
+  { nombre: "manaos", precio: 320 }
 ];
 
 // Función de búsqueda y mostrar en HTML
@@ -25,10 +25,10 @@ function buscarPersona() {
  resultadoContainer.innerHTML = "";
 
  if (personaEncontrada) {
-   var resultadoHTML = "Nombre: " + personaEncontrada.nombre + "<br>Precio: " + personaEncontrada.precio;
+   var resultadoHTML = "Bebida: " + personaEncontrada.nombre + "<br>Precio: " + personaEncontrada.precio;
    resultadoContainer.innerHTML = resultadoHTML;
  } else {
-   resultadoContainer.innerHTML = "No se encontró ninguna persona con ese nombre.";
+   resultadoContainer.innerHTML = "No se encontró ninguna bebida con ese nombre.";
  }
 }
 
