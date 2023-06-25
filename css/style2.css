@@ -32,7 +32,10 @@ header{
 }
 body{
     background-color:  #474b4e;
-}
+}ul {
+    list-style: none;
+}   
+
 .nav{
     margin-top: 10px;
     list-style-type: none;
