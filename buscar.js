@@ -6,8 +6,8 @@ var bebida = [
   { nombre: "lata sneider", precio: 300 },
   { nombre: "sneider", precio: 300 },
   { nombre: "lata gancia", precio: 360 },
-  { nombre: "gancia", precio: 360 },
-  { nombre: "manaos", precio: 320 }
+  { nombre: "gancia", precio: 400 },
+  { nombre: "manaos", precio: 330 }
 
 
 ];
