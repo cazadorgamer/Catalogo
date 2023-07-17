@@ -1,7 +1,7 @@
 // Definir un array de objetos
 var bebida = [
 
-  { nombre: "cerveza palermo", precio: 500 },
+  { nombre: "cerveza palermo", precio: 600 },
   { nombre: "palermo", precio: 500 },
   { nombre: "lata sneider", precio: 300 },
   { nombre: "sneider", precio: 300 },
