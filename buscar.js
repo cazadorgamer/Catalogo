@@ -4,8 +4,10 @@ var bebida = [
   { nombre: "cerveza palermo", precio: 600 },
   { nombre: "palermo", precio: 600 },
   { nombre: "lata sneider", precio: 300 },
-  { nombre: "sneider", precio: 360 },
-  { nombre: "lata gancia", precio: 360 },
+  { nombre: "sneider", precio: 380 },
+  { nombre: "lata anstel", precio: 300 },
+  { nombre: "anstel", precio: 380 },
+  { nombre: "lata gancia", precio: 400 },
   { nombre: "gancia", precio: 400 },
   { nombre: "manaos", precio: 330 }
 
