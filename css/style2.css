@@ -30,6 +30,7 @@ header{
 }
 .bebidas{
     width: 100%;
+    
     min-width: 100px;
     
     box-shadow: -13px 10px 28px 23px black;
@@ -41,6 +42,9 @@ header{
     color: white;
 
     
+}
+img{
+    height: 50%;
 }
 .container{
     display: flex;
