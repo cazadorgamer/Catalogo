@@ -74,6 +74,29 @@ body{
 div img{
     border-radius: 20 px;
 }
+
+@media(min-width: 280px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}s
+@media(min-width: 360px){
+    header {
+        width: 75%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
 @media(min-width: 412px){
     header {
         width: 75%;
@@ -87,30 +110,11 @@ div img{
     }
 }
 
-@media(min-width: 360px){
-    header {
-        width: 75%;
-    }
-    img {
-        width:50% ;
-    }
-    .bebidas{
-        width:75% ;
-    }
-}
 
 
-@media(min-width: 280px){
-    header {
-        width: 100%;
-    }
-    img {
-        width:50% ;
-    }
-    .bebidas{
-        width:75% ;
-    }
-}
+
+
+
 
 @media(min-width: 720px){
     header {
