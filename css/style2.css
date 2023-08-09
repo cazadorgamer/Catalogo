@@ -1,0 +1,141 @@
+
+*{
+   
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+}
+label{
+    color:white;
+}
+h1{background-color:  #474b4e;
+color:#ffffff;
+font-size: 3rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+header{
+    background-color:  #474b4e  ;
+    /*color: white;*/
+}
+#resultado-container{
+    background-color: #474b4e;
+    color:white
+    
+}
+.bebidas{
+    width: 100%;
+    
+    min-width: 100px;
+    
+    box-shadow: -13px 10px 28px 23px black;
+    -webkit-box-shadow: -13px 10px 28px 23px  #474b4e;
+    -moz-box-shadow: -13px 10px 28px 23px  #474b4e;
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+
+    
+}
+img{
+    height: 50%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    background-color:  #474b4e;
+}ul {
+    list-style: none;
+}   
+
+.nav{
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+ }  
+ .nav li{
+    display: inline-block;
+}
+.nav a{
+    color: white;
+    background-color: #13a4a4;
+    padding:5px;
+    border-radius:2px;
+    text-decoration: none;
+}
+div img{
+    border-radius: 20 px;
+}
+
+@media(min-width: 280px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}s
+@media(min-width: 360px){
+    header {
+        width: 75%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+@media(min-width: 412px){
+    header {
+        width: 75%;
+    }
+    
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+
+
+
+
+
+
+
+@media(min-width: 720px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+        order: 1;
+    }
+}@media(min-width: 1080px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:25% ;
+    }
+    .bebidas{
+        width:50% ;
+        order: 1;
+    }
+}

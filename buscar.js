@@ -1,30 +1,54 @@
-const productos=[
-  {nombre:'Cerveza palermo', Valor:460},
-  {nombre:'Manaos', valor:250},
-  {nombre:'gancia', valor:500},
-  {nombre:'coca', valor:400},
-  {nombre:'sneider', valor:300},
+// Definir un array de objetos
+var bebida = [
 
-]
-const formulario=document.querySelector('#formulario');
-const boton= document.querySelector('#boton');
-const resultado = document.querySelector('#resultado')
-const filtrar=()=>{
- // console.log(formulario.value);
- resultado.innerHTML="";
- const texto=formulario.valur.toLowerCase();
-  boton.addEventListener('click',filtrar)
-  formulario.addEventListener('keyup')
-  for(let producto of productos){
-    let nombre= producto.nombre.toLowerCase();
-    if(nombre.indexOf (texto)!== 1 ){
-      resultado.innerHTML += ` <li>${producto.nombre} - Valor: ${producto.valor}</li> `
-    }
-   }
-   if(resultado.innerHTML===""){
-    resultado.innerHTML += ` <li>Producto no encontrado ...</li> `
-   }
+  { nombre: "cerveza palermo", precio: 600 },
+  { nombre: "palermo", precio: 600 },
+  { nombre: "lata sneider", precio: 300 },
+  { nombre: "sneider", precio: 380 },
+  { nombre: "lata anstel", precio: 300 },
+  { nombre: "anstel", precio: 380 },
+  { nombre: "lata gancia", precio: 400 },
+  { nombre: "gancia", precio: 400 },
+  { nombre: "manaos", precio: 330 }
+
+
+];
+
+// Función de búsqueda y mostrar en HTML
+function buscarPersona() {
+  // Obtener el valor del input de nombre
+  var nombreBusqueda = document.getElementById("nombre-input").value;
+
+  // Buscar la persona en el array
+  var personaEncontrada = bebida.find(function(bebida) {
+    return bebida.nombre.toLowerCase() === nombreBusqueda.toLowerCase();
+  });
+
+  // Mostrar el resultado en el HTML
+  var resultadoContainer = document.getElementById("resultado-container");
+
+
+ // Mostrar el resultado en el HTML
+ var resultadoContainer = document.getElementById("resultado-container");
+ resultadoContainer.innerHTML = "";
+
+
+ if (personaEncontrada) {
+
+   var resultadoHTML = "Nombre: " + personaEncontrada.nombre + "<br>Precio: " + personaEncontrada.precio + "<br>";
+
+   resultadoContainer.innerHTML = resultadoHTML;
+
+   
+ } else {
+   resultadoContainer.innerHTML = "No se encontró el producto";
+
+ }
 }
+
+
+
+
 
 
 

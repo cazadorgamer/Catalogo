@@ -20,116 +20,90 @@ min.js"></script>
 <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-<div class="container mt-5">
-  <input type="text" id="formulario" class="form-control my-2">
-  <button class="btn btn-info mb-2" id="boton"> busqueda LAB</button>
-  <ul id="resultado">
-    <li></li>
-  </ul>
-</div>
 
-    <h1>Catalogo de bebidas</h1>
-<div class="header-top">
-  <div class="navegacion">
-<input type="search" placeholder="Buscar...", id="inputBusqueda">
-</div>
-<div class="search" id="search">
-<tablet class="search-table" id="search-Tablet"></tablet>
-<thead>
-<tr>
-  <td></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Inicio</td>
-<tr>
-
-<td></td>
-
-
-
-
+<main>
+  <center><h1>Catalogo de bebidas</h1><br></center>
+  
+  <label for="nombre-input">Buscar bedida:</label>
+  <input type="text" id="nombre-input">
 
  
+  <button onclick="buscarPersona()">Buscar</button>
 
-<td></td>
-</tr>
-<tr><td> <a href="#Latas Sneider"></a> </td></tr>
-<tr><td><a href="#Manaos"></a> </td></tr>
-<tr><td><a href="#html"></a> </td></tr>
-<tr><td><a href="#nuevo" ></a> </td></tr>
-<tr><td><a href="#CSS"></a> </td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr><td></td></tr>
-<tr<td></td>></tr>
-</tbody>
-</div>
-        <p>
-      
-          Busca entre nuestros modelos: <input type="search" name="busquedamodelos" list="listamodelos">
-      
-          <input type="submit" value="Buscar">
-      
-        </p>
-      
-     
-      
-      <datalist id="listamodelos">
-      
-        <option value="Cerveza palermo">
-      
-        <option value="Latas Sneider">
-      
-        <option value="Impala">
-      
-        <option value="Colorado">
-      
-      </datalist>
-    </p>
+  <div id="resultado-container", class="resultado-container"></div>
+
+
+ <div class="container">
+  <div class="bebidas">
+
+
+<h2><strong> Cerveza palermo</strong></h2>
+<img src="img/palermo.png" id="imagen palermo" alt="cerveza palermo 1 litro" title="cerveza palermo 1 litro" width=400px>   
+
+<h3><strong> precio </strong></h3>
+<p><strong>$600 por unidad </strong></p>
+<select name="country" id="">
   
-  </form>
 
-  <ul>
+  <optgroup label="Precio">
+    
+    <option value="una"> c/u 600</option>
+    <option value="pack"> 2x 1200</option>
+    <option value="una"> 3x 1800</option>
+    <option value="pack"> 4x 2400</option>
+      <option value="pack"> 5x 3000</option>
+      <option value="pack"> 6x 3600</option>
+  </optgroup>
+  </select>
+  </fieldset>
 </div>
-<div  class="container " >
-  <div id=palermo>
-<ol><h2>Cerveza palermo</h2>
-<img src="img/palermo.png" alt="cerveza palermo 1 litro" title="cerveza palermo 1 litro" width=400px>   
-</div>
-<h3>precio</h3>
-<p>$460 por unidad</p>
-</ol>
-<div>
-<ol><H2>Latas Sneider</H2>
+<div id="cerveza" class="bebidas">
+<H2><strong> Latas Sneider</strong></H2>
+
 <img src="img/Cerveza-Schneider-Lata-473Ml-1-12957.webp" alt="Latas Sneider" title="Latas Sneider" width="400px">
 <h3>precio</h3>
-<p>$300 por unidad</p>
-<p>$1800 por pack</p></ol>
+<p><strong>$380 por unidad</strong></p>
+<p> <strong>$2280 por pack</strong></p>
+
 </div>
-<div><ol><h2>Manaos</h2>
-<img src="img/manaos.webp" alt="gaseosa manaos" title="gaseosa manaos" width="400px">
-<h3>precio</h3>
-<p>$ 280 por unidad</p></ol></div>
-<div><ol><h2>latas gancia</h2>
-<img src="img/latas gancia.webp" alt="latas gancia" title="latas gancia" width="400px">
-<h3>precio</h3>
-<p>$360 por unidad</p>
-<p>$2160 por pack</p>
+<div id="cerveza" class="bebidas">
+  <H2><strong> Latas anstel</strong></H2>
+  
+  <img src="img/Cerveza-Schneider-Lata-473Ml-1-12957.webp" alt="Latas Sneider" title="Latas Sneider" width="400px">
+  <h3>precio</h3>
+  <p><strong>$380 por unidad</strong></p>
+  <p> <strong>$2280 por pack</strong></p>
+  
+  </div>
+<div class="bebidas"><h2>Manaos</h2>
+<img src="img/manaos.webp" alt="gaseosa manaos" title="gaseosa manaos" width="300px">
+<div>
+<h3><strong> precio</strong></h3>
+
+<p> <strong>  $ 330 por unidad</strong></p>
+</div>
+</div>
+<div class="bebidas"><h2>latas gancia</h2>
+<img src="img/latas gancia.webp" alt="latas gancia" title="latas gancia" width="300px">
+<h3><strong> precio</strong></h3>
+<p> <strong>$400 por unidad</strong></p>
+<p><strong> $2400 por pack</strong></p>
 </div>
 
-<div></ol><h2>Coca vidrio</h2>
-<img src="img/coca vidrio.jpg" alt="coca vidrio" title="coca vidrio" width= 200px>
-<h3>precio</h3>
-<p>$400 por unidad</p>
-</ol>
+<div class="bebidas">
+  <h2><strong> Coca vidrio</strong></h2>
+<img src="img/coca vidrio.jpg" alt="coca vidrio" title="coca vidrio" width= "150px">
+<h3><strong> precio</strong></h3>
+<p><strong>$400 por unidad</strong></p>
+
 </div>
-</ul>
+
 </div>
 <script src="buscar.js"></script>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</div>
+</main>
 </body>
 
 </html>
