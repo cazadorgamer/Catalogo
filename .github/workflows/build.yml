@@ -1,0 +1,13 @@
+name: Trigger Netlify Build
+
+on:
+    schedule:
+        -cron: '0 10** 1'
+
+        jobs:
+        build:
+            name: Request Netlify Webhook
+            runs-on: ubuntu-latest
+            step:
+                -name: Ping
+                run: curl -XPOST -d {} https://app.netlify.com/sites/minidespensa/configuration/domain
