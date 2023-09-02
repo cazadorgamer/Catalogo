@@ -1,8 +1,9 @@
-// Definir un array de objetos
+// Definir un array de objetos,
+let imageSrc = "";
 var bebida = [
 
-  { nombre: "cerveza palermo", precio: 700 },
-  { nombre: "palermo", precio: 750 },
+  { nombre: "cerveza palermo", precio: 750,  portait:imageSrc="img/palermo.png" },
+  { nombre: "palermo", precio: 750,portait: imageSrc="palermo.jpg" },
   { nombre: "lata sneider", precio: 480 },
   { nombre: "sneider", precio: 480 },
   { nombre: "lata anstel", precio: 460 },
@@ -36,8 +37,8 @@ function buscarPersona() {
 
  if (personaEncontrada) {
 
-   var resultadoHTML = "Nombre: " + personaEncontrada.nombre + "<br>Precio: " + personaEncontrada.precio + "<br>";
-
+   var resultadoHTML = "Nombre: " + personaEncontrada.nombre + "<br>Precio: " + personaEncontrada.precio + "<br>" ;
+let resultadoImg= personaEncontrada.portait;
    resultadoContainer.innerHTML = resultadoHTML;
 
    
