@@ -43,6 +43,7 @@ header{
 
     
 }
+
 img{
     height: 50%;
 }
@@ -52,25 +53,32 @@ img{
 }
 body{
     background-color:  #474b4e;
-}ul {
-    list-style: none;
-}   
-
-.nav{
-    margin-top: 10px;
-    list-style-type: none;
-    padding-left: 0;
- }  
- .nav li{
-    display: inline-block;
-}
-.nav a{
-    color: white;
-    background-color: #13a4a4;
-    padding:5px;
-    border-radius:2px;
-    text-decoration: none;
-}
+    }
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center; /* Alineación del texto en el centro */
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+  }
+  
+  nav ul {
+    list-style: none; /* Quita los puntos de lista predeterminados */
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline; /* Muestra los elementos de navegación en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+    text-decoration: none; /* Quita la decoración de subrayado en los enlaces */
+    color: white; /* Color de texto para enlaces */
+    font-weight: bold; /* Fuente en negrita */
+    font-size: 18px; /* Tamaño de fuente */
+  }
+  
 div img{
     border-radius: 20 px;
 }
@@ -195,7 +203,36 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
 
 
 
-
+/* Estilos para la sección del carrito */
+.carrito {
+    background-color: #f5f5f5; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  .carrito h2 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+  }
+  
+  #lista-carrito {
+    list-style: none; /* Quita los puntos de lista predeterminados */
+    padding: 0;
+  }
+  
+  #lista-carrito li {
+    margin-bottom: 10px; /* Espacio entre elementos del carrito */
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
+    padding-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  #total {
+    font-size: 18px; /* Tamaño de fuente para el total */
+    font-weight: bold; /* Fuente en negrita */
+  }
+  
 
 
 @media(min-width: 720px){
