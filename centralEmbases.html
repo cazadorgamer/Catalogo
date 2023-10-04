@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control de Stock</title>
+</head>
+<body>
+    <h1>Producto: Camiseta</h1>
+    <p>Stock disponible: <span id="stock">0</span></p>
+    
+    <button onclick="agregarStock()">Agregar</button>
+    <button onclick="quitarStock()">Quitar</button>
+
+    <p id="mensaje"></p>
+
+    <script>
+        // Inicializa el stock desde el almacenamiento local o utiliza un valor predeterminado de 10
+        var stockDisponible = parseInt(localStorage.getItem("stock")) || 0;
+
+        function actualizarStock() {
+            document.getElementById("stock").textContent = stockDisponible;
+            localStorage.setItem("stock", stockDisponible); // Guarda el valor del stock en el almacenamiento local
+        }
+
+        function agregarStock() {
+            stockDisponible++;
+            actualizarStock();
+            document.getElementById("mensaje").innerHTML = "Stock agregado.";
+        }
+
+        function quitarStock() {
+            if (stockDisponible > 0) {
+                stockDisponible--;
+                actualizarStock();
+                document.getElementById("mensaje").innerHTML = "Stock quitado.";
+            } else {
+                document.getElementById("mensaje").innerHTML = "El stock ya está agotado.";
+            }
+        }
+
+        // Inicializa el stock al cargar la página
+        actualizarStock();
+    </script>
+</body>
+</html>
