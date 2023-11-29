@@ -58,6 +58,11 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
+.carousel-inner > .item > img {
+    object-fit: scale-down;
+    height: 50vh;
+    width: 100%;
+  }
 body{
     background-color:  #474b4e;
     }
