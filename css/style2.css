@@ -50,7 +50,10 @@ header{
 
     
 }
-
+#carouselExampleIndicators {
+    padding: 20px; /* Adjust the padding as needed */
+    margin: 50px;
+  }
 img{
     height: 50%;
 }
