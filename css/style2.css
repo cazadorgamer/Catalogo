@@ -50,7 +50,10 @@ header{
 
     
 }
-
+#carouselExampleIndicators {
+    padding: 20px; /* Adjust the padding as needed */
+    margin: 50px;
+  }
 img{
     height: 50%;
 }
@@ -58,6 +61,11 @@ img{
     display: flex;
     flex-wrap: wrap;
 }
+.carousel-inner > .item > img {
+    object-fit: scale-down;
+    height: 50vh;
+    width: 100%;
+  }
 body{
     background-color:  #474b4e;
     }
@@ -282,7 +290,21 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
   }
   
 
+/* ... Your existing styles ... */
 
+/* Carousel styles */
+#carouselExampleIndicators {
+    width: 80%; /* Set the width of the carousel container */
+    margin: 20px auto; /* Center the carousel on the page */
+  }
+  
+  .carousel-inner img {
+    max-width: 100%; /* Make the images within the carousel responsive */
+    height: auto;
+  }
+  
+  /* ... Your existing styles ... */
+  
 @media(min-width: 720px){
     header {
         width: 100%;
