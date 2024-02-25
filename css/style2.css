@@ -58,8 +58,10 @@ img{
     height: 50%;
 }
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(13.25rem,100%),1fr));
+    grid-gap:1rem;
+    
 }
 .carousel-inner > .item > img {
     object-fit: scale-down;
