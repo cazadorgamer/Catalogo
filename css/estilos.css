@@ -8,7 +8,7 @@
 header{
 	background:#FF5733;
 	color:#FFFFFF;
-	font-size:3em;
+	font-size:1em;
 	width:95%;
 	padding:10px;
 	margin:5px 5px;
@@ -21,7 +21,7 @@ header figure{
 }
 header h1{
     font-size: 2em;
-	float:right;
+	float:left;
 }
 nav{
     text-align: center;
@@ -112,3 +112,27 @@ section p{
 	   color: rgb(7, 6, 6);
 		background-color: yellow; /* Cambiar color de fondo al pasar el cursor */
 	  }
+
+	  @media(min-width: 720px){
+		header {
+			width: 100%;
+		}
+		img {
+			width:50% ;
+		}
+		.bebidas{
+			width:75% ;
+			order: 1;
+		}
+	}@media(min-width: 1080px){
+		header {
+			width: 100%;
+		}
+		img {
+			width:25% ;
+		}
+		.bebidas{
+			width:50% ;
+			order: 1;
+		}
+	}}
