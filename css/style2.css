@@ -120,11 +120,13 @@ button {
   /* Estilo para botón "Agregar al carrito" */
   .agregar-carrito {
     background-color: #ff0000; /* Color de fondo diferente */
+    color: white;
   }
   
   /* Estilo para botón "Eliminar" */
   .eliminar-item {
     background-color: #dc3545; /* Color de fondo diferente */
+    color: white;
   }
   
   /* Cambiar estilo al pasar el cursor sobre el botón */
