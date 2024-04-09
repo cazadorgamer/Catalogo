@@ -3,6 +3,7 @@
 	padding:0px;
 	/*font-family: 'Playfair Display', serif;*/
 	font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
 header{
 	background:#FF5733;
@@ -19,9 +20,12 @@ header figure{
 	float:left;
 }
 header h1{
+    font-size: 2em;
 	float:right;
 }
 nav{
+    text-align: center;
+    margin: 0 auto;
 	font-size:1em;
 	width:95%;
 	padding:5px;
@@ -79,6 +83,8 @@ section p{
         font-size: 2em;
         margin: 0 auto;
         text-align: center;
+        margin-bottom: 10px;
+        padding: 5px;
     }
     aside{
         width: 10%;
@@ -97,3 +103,12 @@ section p{
         font-size: 0.5em;
 
     }
+	button a{
+		text-decoration: none;
+		color: #999;
+	 }
+	 
+	  button:hover {
+	   color: rgb(7, 6, 6);
+		background-color: yellow; /* Cambiar color de fondo al pasar el cursor */
+	  }
