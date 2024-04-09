@@ -130,8 +130,14 @@ button {
   }
   
   /* Cambiar estilo al pasar el cursor sobre el botón */
+ button a{
+    text-decoration: none;
+    color: #999;
+ }
+ 
   button:hover {
-    background-color: #0056b3; /* Cambiar color de fondo al pasar el cursor */
+   color: rgb(255, 255, 255);
+    background-color: yellow; /* Cambiar color de fondo al pasar el cursor */
   }
   
 /* Estilo para las imágenes dentro de la caja de búsqueda */
