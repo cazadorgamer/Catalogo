@@ -3,16 +3,16 @@
 	padding:0px;
 	/*font-family: 'Playfair Display', serif;*/
 	font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+    font-size: 10px;
 }
 header{
 	background:#FF5733;
 	color:#FFFFFF;
-	font-size:1em;
+	font-size:3em;
 	width:95%;
-	padding:10px;
-	margin:5px 5px;
-	display:inline-block;
+	padding:2px;
+	margin:3px 1px;
+	display:block;
 	border:solid 1px #ccc;
 	border-radius:25px;
 }
@@ -21,22 +21,22 @@ header figure{
 }
 header h1{
     font-size: 2em;
-	float:left;
+	float:center;
 }
 nav{
     text-align: center;
     margin: 0 auto;
 	font-size:1em;
 	width:95%;
-	padding:5px;
-	margin:1px 1px;
+	padding:2px;
+	margin:3px 1px;
 	text-align:center;
 }
 nav ul{
 	list-style-type:none;
 }
 nav li{
-	display:inline;
+	display:block;
 	text-align:center;
 	margin:0 15px 0 0;
 }
@@ -51,6 +51,124 @@ nav li a:hover{
 	background:#FF5733;
 	color:#FFFFFF;
 }
+section{
+	width:95%;
+	margin-left:10px;
+	margin-top:20px;
+	padding:5px;
+	border:1px solid #ccc;
+	float:left;
+	background:#E6E6E6;
+	color:#000000;
+	border-radius:25px;
+}
+section h2{
+    
+	color:#FF5733;
+	font-size:1.5em;
+}
+section p{
+	font-size:1em;}
+  
+    table{
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    td{
+        width: 120px;
+        margin-right: 20px;
+    }
+    article h2{
+        font-size: 1em;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 3px;
+    }
+	button {
+		padding: 10px 20px; /* Espaciado interno del botón */
+		font-size: 16px; /* Tamaño de fuente */
+		background-color: #007bff; /* Color de fondo del botón */
+		color: white; /* Color de texto */
+		border: none; /* Borde sin estilo */
+		border-radius: 5px; /* Bordes redondeados */
+		cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	  }
+    footer{
+        width: 95%;
+        clear: both;
+        margin-left: 10px;
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 0.5em;
+
+    }
+#mapa{
+    margin: 0 auto;
+    text-align: center;
+}
+address{
+    text-align: center;
+    margin:0 auto;
+    font-size: 2em;
+}
+p{
+    text-align: center;
+    margin:0 auto;
+    font-size: 2em; 
+}
+@media screen and (man-width: 639px){
+
+
+}
+@media screen and (min-width: 640px)
+{
+body{
+    margin: 0 auto;
+    font-size: 14px;
+}
+header{
+	background:#404033;
+	color:#FFFFFF;
+	font-size:3em;
+	width:95%;
+	padding:2px;
+	margin:3px 1px;
+	display:block;
+	border:solid 1px #ccc;
+	border-radius:25px;
+}
+
+header h1{
+    font-size: 2em;
+    color: #f3f390;
+    text-align: center;
+	
+    background: #404033;
+}
+nav{
+    text-align: center;
+    margin: 0 auto;
+	font-size:1em;
+	width:95%;
+	padding:5px;
+	margin:1px 1px;
+	text-align:center;
+}
+
+nav li{
+	display:block;
+	padding: 6px;
+	margin:3px ;
+}
+nav li a{
+    padding:3px ;
+    color: #f3f390;
+    background: #404033;
+    border: 1px solid #f3f390;
+}
+
 section{
 	width:90%;
 	margin-left:15px;
@@ -87,12 +205,7 @@ section p{
         padding: 5px;
     }
     aside{
-        width: 10%;
-        margin-left: 15px;
-        margin-top: 25px;
-        padding: 10px;
-        float: left;
-        font-size: 5em;
+    
     }
     footer{
         width: 95%;
@@ -103,36 +216,216 @@ section p{
         font-size: 0.5em;
 
     }
-	button a{
-		text-decoration: none;
-		color: #999;
-	 }
-	 
-	  button:hover {
-	   color: rgb(7, 6, 6);
-		background-color: yellow; /* Cambiar color de fondo al pasar el cursor */
-	  }
+#mapa{
+    margin: 0 auto;
+    text-align: center;
+}
+address{
+    text-align: center;
+    margin:0 auto;
+    font-size: 2em;
+}
+p{
+    text-align: center;
+    margin:0 auto;
+    font-size: 2em; 
+}
+   
+}
+@media(min-width: 280px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+@media(min-width: 360px){
+    header {
+        width: 75%;
+    }
+    img {
+        width:50% ;
+        transition: all 0.8s ease;
+    }
+    img:hover{
+        transition:all 0.6s ease;
+        filter: brightness(150%);
+    }
 
-	  @media(min-width: 720px){
-		header {
-			width: 100%;
-		}
-		img {
-			width:50% ;
-		}
-		.bebidas{
-			width:75% ;
-			order: 1;
-		}
-	}@media(min-width: 1080px){
-		header {
-			width: 100%;
-		}
-		img {
-			width:25% ;
-		}
-		.bebidas{
-			width:50% ;
-			order: 1;
-		}
-	}
+    .bebidas{
+        width:100% ;
+    }
+    .box{
+        width: 75%;
+        background-color: white;
+    }
+    .content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+    display: none;
+}
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.content-select select:hover{
+	background: #B1E8CD;
+}
+/*cuando escribis se pinta de color*/
+input:focus{
+    background-color: aqua;
+
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+
+.content-select:hover i{
+	margin-top: 3px;
+}
+    select
+    {
+       border: solid white;
+        font-weight: 900;
+       
+        font-size: large;
+        border-block-color: white;
+        width: 75%;
+        height: 10%;
+        background-color:#474b4e;
+        border-color: #474b4e;
+    }
+  
+}
+@media(min-width: 412px){
+    header {
+        width: 75%;
+    }
+    select
+    {
+        width: 50%;
+        background-color: white;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+
+
+
+
+/* Estilos para la sección del carrito */
+.carrito {
+    background-color: #f5f5f5; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  .carrito h2 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+  }
+  
+  #lista-carrito {
+    list-style: none; /* Quita los puntos de lista predeterminados */
+    padding: 0;
+  }
+  
+  #lista-carrito li {
+    margin-bottom: 10px; /* Espacio entre elementos del carrito */
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
+    padding-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  #total {
+    font-size: 18px; /* Tamaño de fuente para el total */
+    font-weight: bold; /* Fuente en negrita */
+  }
+  
+
+/* ... Your existing styles ... */
+
+/* Carousel styles */
+#carouselExampleIndicators {
+    width: 80%; /* Set the width of the carousel container */
+    margin: 20px auto; /* Center the carousel on the page */
+  }
+  
+  .carousel-inner img {
+    max-width: 100%; /* Make the images within the carousel responsive */
+    height: auto;
+  }
+  
+  /* ... Your existing styles ... */
+@media(min-width: 720px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+        order: 1;
+    }
+}@media(min-width: 1080px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:25% ;
+    }
+    .bebidas{
+        width:50% ;
+        order: 1;
+    }
+}}
