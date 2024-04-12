@@ -255,6 +255,14 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
     }
   
 }
+
+.card:hover{
+    border:blue;
+    margin: 5px;
+    width: 30%;
+cursor: pointer;
+
+}
 @media(min-width: 412px){
     header {
         width: 75%;
