@@ -145,6 +145,48 @@ button {
     max-width: 50px; /* Establece el ancho máximo de la imagen */
     height: auto; /* Mantiene la proporción de aspecto original */
   }
+  .card{
+ 
+    display:inline-block; 
+    border: #fa8258 10px solid;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+   
+    width: 20%;
+    
+}
+.card:hover{
+    
+    margin: 5px;
+    width: 100%;
+cursor: pointer;
+
+}
+.card img{
+    width: 100%;
+    height: 100%;
+
+}
+.card img:hover{
+
+    margin: 5px;
+    width: 100%;
+cursor: pointer;
+
+}
+.card h5{
+    font-size: 2em;
+
+}
+
+article{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+}
+
+
       
 @media(min-width: 280px){
     header {
@@ -256,13 +298,8 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
   
 }
 
-.card:hover{
-    border:blue;
-    margin: 5px;
-    width: 30%;
-cursor: pointer;
 
-}
+
 @media(min-width: 412px){
     header {
         width: 75%;
