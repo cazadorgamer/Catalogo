@@ -189,12 +189,12 @@ article{
 .contenido{
     float: left;
     display:inline-block; 
-    border: #fa8258 10px solid;
+    border: #fa8258 1px solid;
     margin-top: 25px;
     margin-right: 15px;
     margin-left: 15px;
    
-    width: 90%;
+    width: 100%;
     
 }
 .contenido img{
@@ -206,7 +206,7 @@ article{
     font-size: 4em;;
 }
 .contenido p{
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
 }
 
@@ -214,6 +214,9 @@ article{
 @media(min-width: 280px){
     header {
         width: 100%;
+    }
+    .contenido{
+        font-size: 8px;
     }
     img {
         width:50% ;
@@ -226,8 +229,11 @@ article{
     header {
         width: 75%;
     }
+    .contenido{
+        font-size: 8px;
+    }
     img {
-        width:50% ;
+        width:100% ;
         transition: all 0.8s ease;
     }
     img:hover{
@@ -337,6 +343,9 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
     }
     .bebidas{
         width:75% ;
+    }
+    .contenido{
+        font-size: 10px;
     }
 }
 
