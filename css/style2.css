@@ -145,10 +145,78 @@ button {
     max-width: 50px; /* Establece el ancho máximo de la imagen */
     height: auto; /* Mantiene la proporción de aspecto original */
   }
+  .card{
+ 
+    display:inline-block; 
+    
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+   
+    width: 20%;
+    
+}
+.card:hover{
+    
+    margin: 5px;
+    width: 200%;
+cursor: pointer;
+
+}
+.card img{
+    width: 100%;
+    height: 100%;
+
+}
+.card img:hover{
+
+    margin: 5px;
+    width: 100%;
+cursor: pointer;
+
+}
+.card h5{
+    font-size: 2em;
+
+}
+
+article{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.contenido{
+    float: left;
+    display:inline-block; 
+    border: #fa8258 1px solid;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+   
+    width: 100%;
+    
+}
+.contenido img{
+    width: 75%;
+    height: 75%;
+   
+}
+.contenido h2{
+    font-size: 4em;;
+}
+.contenido p{
+    font-size: 2em;
+    color: white;
+}
+
       
 @media(min-width: 280px){
     header {
         width: 100%;
+    }
+    .contenido{
+        font-size: 8px;
     }
     img {
         width:50% ;
@@ -161,8 +229,11 @@ button {
     header {
         width: 75%;
     }
+    .contenido{
+        font-size: 8px;
+    }
     img {
-        width:50% ;
+        width:100% ;
         transition: all 0.8s ease;
     }
     img:hover{
@@ -255,6 +326,9 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
     }
   
 }
+
+
+
 @media(min-width: 412px){
     header {
         width: 75%;
@@ -269,6 +343,9 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
     }
     .bebidas{
         width:75% ;
+    }
+    .contenido{
+        font-size: 10px;
     }
 }
 
