@@ -150,13 +150,13 @@ button {
     display:inline-block; 
     
     margin-top: 25px;
-
+    
    
     width: 20%;
     
 }
 .card:hover{
-    
+ 
     margin: 5px;
     width: 200%;
 cursor: pointer;
