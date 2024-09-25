@@ -1,0 +1,495 @@
+
+*{
+   
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    
+}
+
+a:visited{
+    background-color: aqua;
+}
+a:active{
+    background-color: blue;
+}
+label{
+    color:white;
+}
+h1{background:#000000; 
+color:white;
+font-size: 3rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+header{
+    background-color: #000000;
+    /*color: white;*/
+}
+#resultado-container{
+    background: #000000;
+    color:white
+    
+}
+.bebidas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+
+    
+}
+#carouselExampleIndicators {
+    padding: 10px; /* Adjust the padding as needed */
+    margin: 10px;
+  }
+img{
+    width: 200px;
+    margin: 10px;
+padding: 10px;
+}
+.container{
+background-color: #000000;
+   width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start;
+  /*  display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(13.25rem,100%),1fr));
+    grid-gap:1rem;*/
+
+}
+.carousel-inner > .item > img {
+    object-fit: scale-down;
+    height: 50vh;
+    width: 100%;
+  }
+body{
+  background-color:   #000000;
+    }
+/* Estilos para la barra de navegación */
+nav {
+    background-color: white; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center; /* Alineación del texto en el centro */
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+  }
+  
+  nav ul {
+    list-style: none; /* Quita los puntos de lista predeterminados */
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline; /* Muestra los elementos de navegación en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+  }
+  
+  nav a {
+    text-decoration: none; /* Quita la decoración de subrayado en los enlaces */
+    color: white; /* Color de texto para enlaces */
+    font-weight: bold; /* Fuente en negrita */
+    font-size: 18px; /* Tamaño de fuente */
+  }
+  
+div img{
+    border-radius: 20 px;
+}
+co
+/* Estilos para botones */
+button {
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color de texto */
+    border: none; /* Borde sin estilo */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  /* Estilo para botón "Agregar al carrito" */
+  .agregar-carrito {
+    background-color: #ff0000; /* Color de fondo diferente */
+    color: white;
+  }
+  
+  /* Estilo para botón "Eliminar" */
+  .eliminar-item {
+    background-color: #dc3545; /* Color de fondo diferente */
+    color: white;
+  }
+  
+  /* Cambiar estilo al pasar el cursor sobre el botón */
+ button a{
+    text-decoration: none;
+    color: #999;
+ }
+ 
+  button:hover {
+   color: rgb(255, 255, 255);
+    background-color: yellow; /* Cambiar color de fondo al pasar el cursor */
+  }
+  
+/* Estilo para las imágenes dentro de la caja de búsqueda */
+.resultado-imagen {
+    max-width: 50px; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de aspecto original */
+  }
+  .card{
+ 
+    display:inline-block; 
+    
+    margin-top: 25px;
+    
+   
+    width: 20%;
+    
+}
+.card:hover{
+ 
+    margin: 5px;
+    width: 200%;
+cursor: pointer;
+
+}
+.card img{
+    width: 100%;
+    height: 100%;
+
+}
+.card img:hover{
+
+    margin: 5px;
+    width: 100%;
+cursor: pointer;
+
+}
+.card h5{
+    font-size: 2em;
+
+}
+
+article{
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+}
+#coca{
+    margin-right: 250px;
+}
+.contenido{
+    float: left;
+    display:inline-block; 
+    border: #fa8258 1px solid;
+    margin-top: 25px;
+   /* margin-right: 15px;
+    margin-left: 15px;*/
+   
+    width: 100%;
+    
+}
+.contenido img{
+    width: 75%;
+    height: 75%;
+   
+}
+.contenido h2{
+    font-size: 4em;;
+}
+.contenido p{
+    font-size: 2em;
+    color: white;
+}
+
+      
+@media(min-width: 280px){
+    header {
+        width: 100%;
+    }
+    .contenido{
+        font-size: 8px;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+}
+@media(min-width: 360px){
+    header {
+        width: 75%;
+    }
+    .contenido{
+        font-size: 8px;
+    }
+    img {
+        width:100% ;
+        transition: all 0.8s ease;
+    }
+    img:hover{
+        transition:all 0.6s ease;
+        filter: brightness(150%);
+    }
+
+    .bebidas{
+        width:100% ;
+    }
+    .box{
+        width: 75%;
+        background-color: white;
+    }
+    .content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.content-select select::-ms-expand {
+    display: none;
+}
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.content-select select:hover{
+	background: #B1E8CD;
+}
+/*cuando escribis se pinta de color*/
+input:focus{
+    background-color: aqua;
+
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+
+.content-select:hover i{
+	margin-top: 3px;
+}
+    select
+    {
+       border: solid white;
+        font-weight: 900;
+       
+        font-size: large;
+        border-block-color: white;
+        width: 75%;
+        height: 10%;
+        background-color:#474b4e;
+        border-color: #474b4e;
+    }
+  
+}
+
+
+
+@media(min-width: 412px){
+    header {
+        width: 75%;
+    }
+    select
+    {
+        width: 50%;
+        background-color: white;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+    }
+    .contenido{
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* Estilos para la sección del carrito */
+.carrito {
+    background-color: #f5f5f5; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  .carrito h2 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+  }
+  
+  #lista-carrito {
+    list-style: none; /* Quita los puntos de lista predeterminados */
+    padding: 0;
+  }
+  
+  #lista-carrito li {
+    margin-bottom: 10px; /* Espacio entre elementos del carrito */
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
+    padding-bottom: 10px; /* Espaciado inferior */
+  }
+  
+  #total {
+    font-size: 18px; /* Tamaño de fuente para el total */
+    font-weight: bold; /* Fuente en negrita */
+  }
+  
+
+/* ... Your existing styles ... */
+
+/* Carousel styles */
+#carouselExampleIndicators {
+    width: 80%; /* Set the width of the carousel container */
+    margin: 20px auto; /* Center the carousel on the page */
+  }
+  
+  .carousel-inner img {
+    max-width: 100%; /* Make the images within the carousel responsive */
+    height: auto;
+  }
+
+  :root{
+    --background:#f8f8ff;
+    --text:#2c2c2c;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    height: 100vh;
+    padding: 6rem 2rem;
+    background: var(--background);
+}
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 1.5rem;
+}
+
+.articles article{
+    max-width: 320px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    transition:all 0.4s ease-in-out ;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.articles article h2{
+    margin: 0 0 0.5rem 0;
+    font-size: 1.6rem;
+    color: var(--text);
+    transition: color 0.3s ease-out;
+}
+
+.articles article img{
+    max-width: 100%;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    height: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    object-fit: cover;
+} 
+
+.articles article:hover img{
+    transform:scale(1.5);
+}
+.articles-preview{
+    padding: 1.5rem;
+    background: white;
+}
+
+.articles figure{
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+}
+  
+  /* ... Your existing styles ... */
+  
+@media(min-width: 720px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:50% ;
+    }
+    .bebidas{
+        width:75% ;
+        order: 1;
+    }
+}@media(min-width: 1080px){
+    header {
+        width: 100%;
+    }
+    img {
+        width:25% ;
+    }
+    .bebidas{
+        width:50% ;
+        order: 1;
+    }
+}}
