@@ -239,7 +239,7 @@ article{
 }
 @media(min-width: 360px){
     header {
-        width: 75%;
+        width: 100%;
     }
     .contenido{
         font-size: 8px;
@@ -288,7 +288,7 @@ article{
     }
     .contenido{
         font-size: 10px;
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -329,17 +329,7 @@ article{
 /* ... Your existing styles ... */
 
 /* Carousel styles */
-#carouselExampleIndicators {
-    width: 80%; /* Set the width of the carousel container */
-    margin: 20px auto; /* Center the carousel on the page */
-  }
-  
-  .carousel-inner img {
-    max-width: 100%; /* Make the images within the carousel responsive */
-    height: auto;
-  }
-  
-  /* ... Your existing styles ... */
+
   
 @media(min-width: 720px){
     header {
