@@ -1,375 +1,384 @@
-
-*{
-   
+/* Reseteo general de márgenes, padding y box-sizing */
+* {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     padding: 0;
-    
 }
 
-a:visited{
+/* Estilo básico para el logo */
+.logo-container {
+    position: absolute;
+    top: 10px;  /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 100px;  /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+/* Estilo para enlaces */
+a:visited {
     background-color: aqua;
 }
-a:active{
+
+a:active {
     background-color: blue;
 }
-label{
-    color:white;
+
+/* Estilo para etiquetas */
+label {
+    color: white;
 }
-h1{background:#000000; 
-color:white;
-font-size: 3rem;
+
+/* Estilo para títulos */
+h1 {
+    background: #000000;
+    color: white;
+    font-size: 3rem;
+    text-align: justify;
 }
-h2{
+
+h2 {
     font-size: 1.8rem;
 }
-h3{
+
+h3 {
     font-size: 1.5rem;
 }
-header{
+
+/* Estilo para el header */
+header {
     background-color: #000000;
-    /*color: white;*/
 }
-#resultado-container{
+
+/* Estilos generales para el contenedor de resultados */
+#resultado-container {
     background: #000000;
-    color:white
-    
+    color: white;
 }
-.bebidas{
+
+/* Estilo para las bebidas */
+.bebidas {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
     font-size: medium;
     margin-left: auto;
     margin-right: auto;
     color: white;
-
-    
 }
 
-img{
+/* Estilo para imágenes generales */
+img {
     width: 200px;
     margin: 10px;
-padding: 10px;
+    padding: 10px;
 }
 
+/* Estilo para el body */
+body {
+    background-color: #000000;
+}
 
-
-body{
-  background-color:   #000000;
-    }
 /* Estilos para la barra de navegación */
 nav {
     background-color: white; /* Color de fondo */
     color: white; /* Color de texto */
     text-align: center; /* Alineación del texto en el centro */
     padding: 10px 0; /* Espaciado interno superior e inferior */
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none; /* Quita los puntos de lista predeterminados */
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline; /* Muestra los elementos de navegación en línea */
     margin-right: 20px; /* Espacio entre elementos */
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none; /* Quita la decoración de subrayado en los enlaces */
     color: white; /* Color de texto para enlaces */
     font-weight: bold; /* Fuente en negrita */
     font-size: 18px; /* Tamaño de fuente */
-  }
-  
-div img{
-    border-radius: 20 px;
 }
 
-/* Estilos para botones */
+/* Estilo para imágenes dentro de un div */
+div img {
+    border-radius: 20px;
+}
+
+/* Estilos generales para botones */
 button {
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 16px; /* Tamaño de fuente */
-    background-color: #007bff; /* Color de fondo del botón */
-    color: white; /* Color de texto */
-    border: none; /* Borde sin estilo */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  }
-  
-  /* Estilo para botón "Agregar al carrito" */
-  .agregar-carrito {
-    background-color: #ff0000; /* Color de fondo diferente */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
     color: white;
-  }
-  
-  /* Estilo para botón "Eliminar" */
-  .eliminar-item {
-    background-color: #dc3545; /* Color de fondo diferente */
-    color: white;
-  }
-  
-  /* Cambiar estilo al pasar el cursor sobre el botón */
- button a{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón "Agregar al carrito" */
+.agregar-carrito {
+    background-color: #ff0000;
+}
+
+/* Estilos para el botón "Eliminar" */
+.eliminar-item {
+    background-color: #dc3545;
+}
+
+/* Estilo para los enlaces dentro de los botones */
+button a {
     text-decoration: none;
     color: #999;
- }
- 
-  button:hover {
-   color: rgb(255, 255, 255);
+}
+
+/* Cambiar estilo al pasar el cursor sobre el botón */
+button:hover {
+    color: rgb(255, 255, 255);
     background-color: yellow; /* Cambiar color de fondo al pasar el cursor */
-  }
-  
+}
+
 /* Estilo para las imágenes dentro de la caja de búsqueda */
 .resultado-imagen {
-    max-width: 50px; /* Establece el ancho máximo de la imagen */
-    height: auto; /* Mantiene la proporción de aspecto original */
-  }
-  .card{
- 
-    display:inline-block; 
-    
-    margin-top: 25px;
-    
-   
-    width: 20%;
-    
+    max-width: 50px;
+    height: auto;
 }
-.card:hover{
- 
+
+/* Estilos para las tarjetas */
+.card {
+    display: inline-block;
+    margin-top: 25px;
+    width: 20%;
+}
+
+.card:hover {
     margin: 5px;
     width: 200%;
-cursor: pointer;
-
+    cursor: pointer;
 }
-.card img{
+
+.card img {
     width: 100%;
     height: 100%;
-
 }
-.card img:hover{
 
+.card img:hover {
     margin: 5px;
     width: 100%;
-cursor: pointer;
-
+    cursor: pointer;
 }
-.card h5{
+
+.card h5 {
     font-size: 2em;
-
 }
-.grid-layout{
+
+/* Estilo de la grid layout */
+.grid-layout {
     display: grid;
- 
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 50% 50%;
 }
 
-article{
+/* Estilo para artículos */
+article {
     display: block;
     margin: 0 auto;
     width: 50%;
 }
-#coca{
+
+/* Estilos adicionales para el contenedor de la Coca */
+#coca {
     margin-right: 250px;
 }
-.contenido{
-   
-    display:inline-block; 
+
+/* Estilo para el contenedor de contenido */
+.contenido {
+    display: inline-block;
     border: #fa8258 1px solid;
     margin-top: 25px;
-   /* margin-right: 15px;
-    margin-left: 15px;*/
-   
     width: 100%;
-    
 }
 
-
-
-
-
-
-.contenido img{
+.contenido img {
     width: 75%;
     height: 75%;
-   
 }
 
-.mediana{
-    width: 100px;
-    height: 100px;
-  }
-
-
-
-
-.contenido h2{
-    font-size: 4em;;
+.contenido h2 {
+    font-size: 4em;
 }
-.contenido p{
+
+.contenido p {
     font-size: 2em;
     color: white;
 }
 
-      
-@media(min-width: 280px){
+.mediana {
+    width: 100px;
+    height: 100px;
+}
+
+/* Media Queries para diferentes resoluciones */
+
+/* Resolución 280px */
+@media (min-width: 280px) {
     header {
         width: 100%;
     }
-    .contenido{
+    .contenido {
         font-size: 8px;
     }
     img {
-        width:50% ;
+        width: 50%;
         height: 50%;
     }
-
-.grid-layout{
-  width:  600px;
-    grid-template-columns: 50% 50%;
-}
-    .bebidas{
-        width:75% ;
+    .grid-layout {
+        width: 600px;
+        grid-template-columns: 50% 50%;
     }
-    
-    
+    .logo {
+        margin-top: 50px;
+        margin-left: -15px;
+        width: 50px;
+    }
+    .bebidas {
+        width: 75%;
+    }
 }
-@media(min-width: 360px){
+
+/* Resolución 360px */
+@media (min-width: 360px) {
     header {
         width: 100%;
     }
-    .contenido{
+    .contenido {
         font-size: 8px;
     }
     img {
-        width:100% ;
+        width: 100%;
         transition: all 0.8s ease;
     }
-    img:hover{
-        transition:all 0.6s ease;
+    img:hover {
+        transition: all 0.6s ease;
         filter: brightness(150%);
     }
-
-    .bebidas{
-        width:100% ;
+    .bebidas {
+        width: 100%;
     }
-    .box{
+    .logo {
+        width: 60px;
+    }
+    .box {
         width: 75%;
         background-color: white;
     }
-    .grid-layout{
-      /*  grid-template-columns: 50% 50%;*/ 
-    }
-    .content-input input,
-.content-select select{
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
 }
 
-
-@media(min-width: 412px){
+/* Resolución 412px */
+@media (min-width: 412px) {
     header {
         width: 100%;
     }
-    select
-    {
+    select {
         width: 50%;
         background-color: white;
     }
     img {
-        
         width: 10px;
         height: 10px;
     }
-    .bebidas{
-        width:100% ;
+    .bebidas {
+        width: 100%;
     }
-    .contenido{
+    .contenido {
         font-size: 10px;
         width: 100%;
     }
-    .grid-layout{
-        grid-template-columns: 50% 50%; 
+    .grid-layout {
+        grid-template-columns: 50% 50%;
+    }
+    .logo {
+        width: 70px;
     }
 }
 
+/* Resolución 720px */
+@media (min-width: 720px) {
+    header {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    }
+    img {
+        width: 50%;
+    }
+    .logo {
+        width: 80px;
+    }
+    .bebidas {
+        width: 75%;
+        order: 1;
+    }
+}
 
+/* Resolución 1080px */
+@media (min-width: 1080px) {
+    header {
+        width: 100%;
+    }
+    img {
+        width: 25%;
+    }
+    .bebidas {
+        width: 50%;
+        order: 1;
+    }
+    .logo {
+        width: 90px;
+        margin-top: -30px;
+    }
+}
 
+/* Resolución superior a 1080px */
+@media (min-width: 1081px) {
+    .logo {
+        width: 100px;  /* Tamaño original del logo */
+    }
+}
 
-/* Estilos para la sección del carrito */
+/* Estilos para el carrito */
 .carrito {
-    background-color: #f5f5f5; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
-    border: 1px solid #ddd; /* Borde */
-    border-radius: 5px; /* Bordes redondeados */
-    margin-top: 20px; /* Espacio superior */
-  }
-  
-  .carrito h2 {
-    font-size: 24px; /* Tamaño de fuente para el título */
-    margin-bottom: 10px; /* Espacio inferior del título */
-  }
-  
-  #lista-carrito {
-    list-style: none; /* Quita los puntos de lista predeterminados */
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.carrito h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#lista-carrito {
+    list-style: none;
     padding: 0;
-  }
-  
-  #lista-carrito li {
-    margin-bottom: 10px; /* Espacio entre elementos del carrito */
-    border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
-    padding-bottom: 10px; /* Espaciado inferior */
-  }
-  
-  #total {
-    font-size: 18px; /* Tamaño de fuente para el total */
-    font-weight: bold; /* Fuente en negrita */
-  }
-  
-
-/* ... Your existing styles ... */
-
-/* Carousel styles */
-
-  
-@media(min-width: 720px){
-    header {
-        width: 100%;
-    }
-    body{
-        width: 100%;
-    }
-    img {
-        width:50% ;
-    }
-
-.grid-layout{
-   /* grid-template-columns: 50% 50%; */
 }
-        
-    
-    .bebidas{
-        width:75% ;
-        order: 1;
-    }
-}
-@media(min-width: 1080px){
-    header {
-        width: 100%;
-    }
-    img {
-        width:25% ;
-    }
-    .bebidas{
-        width:50% ;
-        order: 1;
-    }
 
-.grid-layout{
-   /* grid-template-columns: 50% 50%;*/ 
+#lista-carrito li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
 }
