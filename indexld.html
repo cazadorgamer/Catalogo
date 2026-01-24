@@ -22,14 +22,19 @@ min.js"></script>
 </head>
 <body>
   <header>
+ 
   <div class="container">
-   
-      <h1 style="color: white; background-color: #000000;">Supermercado MiTienda</h1>
-   
+     
+ 
+      <h1 style="color: white; background-color: #000000; text-align: center;">Supermercado MiTienda</h1>
+ <button id="CambiarFondo">Cambiar fondo</button>
   </div>
 
-<button ><a href="indexluz.html">Modo Dia</a></button>
+  <div class="logo-container">
+    <img src="img/minidespensa.png" alt="Logo" class="logo">
+</div><br>
   <nav class="navbar " style="background-color: #000000;">
+ 
     <ul>
       <li><a href="#">Inicio</a></li>
       <li><a href="#">Productos</a></li>
@@ -49,7 +54,8 @@ min.js"></script>
 
 
 <main>
-  <center><h1 style="color: white;">Catalogo de bebidas</h1><br></center>
+
+  <h1 style="color: white; text-align: center;">Catalogo de bebidas</h1>
   
 
 
@@ -58,8 +64,7 @@ min.js"></script>
 
 
 
- <div class="container">
-  <div class="bebidas">
+
 
 
 
@@ -72,9 +77,9 @@ min.js"></script>
 
 
 <section class="productos">
-  <div class="row">
+  <div class="grid-layout">
     
-  <article class="producto" data-id="1" data-nombre="cerveza palermo" data-precio="2000.00">
+  <article class="producto" data-id="1" data-nombre="cerveza palermo" data-precio="2200.00">
     
    
 
@@ -84,26 +89,15 @@ min.js"></script>
       <div class="card-body">
         <h5 class="card-title">Cerveza Palermo</h5>
         <p class="card-text">
-          Precio: $2000</p>
+          Precio: $2200</p>
         
       </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-      
-      
+    </div>      
       <button class="agregar-carrito">Agregar al carrito</button><br><br>
     </article>
 
-      <article class="producto" data-id="2" data-nombre="cerveza Sneider" data-precio="1500.00">
+
+      <article class="producto" data-id="2" data-nombre="cerveza Sneider" data-precio="1600.00">
         
 
 
@@ -111,7 +105,7 @@ min.js"></script>
         <a href="sneider.html"><img class="mediana" src="/img/Cerveza-Schneider-Lata-473Ml-1-12957.webp"  class="card-img-top" alt="..."></a>
         <div class="card-body">
           <h5 class="card-title">cerveza sneider</h5>
-          <p class="card-text">Precio: $1500.00</p>
+          <p class="card-text">Precio: $1600.00</p>
           
           
         </div>
@@ -127,14 +121,15 @@ min.js"></script>
     
 
   </article>
-  <br><article class="producto" data-id="3" data-nombre="Lata Anstel" data-precio="1500.00">
+
+  <article class="producto" data-id="3" data-nombre="Lata Anstel" data-precio="1500.00">
 
     
     <div class="card" style="width: 15rem; color: black;">
       <img src="img/anstel.jpg" class="mediana" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Anstel</h5>
-        <p class="card-text">Precio: $1500.00</p>
+        <p class="card-text">Precio: Sin stock</p>
        
               </div>
     </div>
@@ -142,6 +137,7 @@ min.js"></script>
 
     
 </article>
+
 <article class="producto" data-id="4" data-nombre="Manaos" data-precio="1400.00">
 
 
@@ -165,7 +161,7 @@ min.js"></script>
 </article>
   
   
-  <article class="producto" data-id="6" data-nombre="coca vidrio" data-precio="1800.00">
+<article class="producto" data-id="6" data-nombre="coca vidrio" data-precio="2500.00">
   
 
 
@@ -174,7 +170,7 @@ min.js"></script>
     <a href="coca.html" ><img class="mediana" src="img/coca cola vidrio.jpg" class="card-img-top" alt="..."></a>
     <div class="card-body">
       <h5 class="card-title">coca vidrio</h5>
-      <p class="card-text">Precio: $1800.00</p>
+      <p class="card-text">Precio: $2500.00</p>
       
     </div>
     
@@ -188,10 +184,10 @@ min.js"></script>
     
 </article>
 
-
+</div>
 
 </section>
-</div>
+
 
   <!-- Más productos aquí -->
 
@@ -199,14 +195,42 @@ min.js"></script>
       
   
 
-</div>
 
-</div>
 <script src="buscar3.js"></script>
 <script src="carrito.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+  <script>
+            var boton= document.getElementById("CambiarFondo");
+         function random(numeroMaximo){
+            return Math.round(Math.random()* numeroMaximo);
+         }
+
+
+            boton.addEventListener("click", function(evento){
+                console.log(evento);
+              var randomColor =[
+                random(255),
+                random(255),
+                random(255),
+
+              ];
+              document.body.style.backgroundColor= "rgb("+ randomColor[0]+ ","+ randomColor[1]+","+ randomColor[2]+")"
+            });
+
+            document.addEventListener ("cambiarFondo", function(evento){
+console.log(evento);
+console.log(evento.detail);
+            });
+            var event= new CustomEvent("cambiarFondo",{"detail":"Hola John"});
+            document.dispatchEvent(event);
+            
+        </script>
+
+
 </div id="carrito">
 
 <section  class="carrito">

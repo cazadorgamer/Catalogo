@@ -1,237 +1,231 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title>Tienda de Bebidas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Latest compiled and minified CSS -->
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
-.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/p
-opper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
-min.js"></script>
-<link rel="stylesheet" href="css/style2.css">
+body {
+  background: #fff;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* CATEGORIAS */
+.categories {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.categories button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.categories button:hover {
+  background: #444;
+}
+
+/* SECCIONES */
+.section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* GRID PRODUCTOS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #444;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background: #f2f2f2;
+  font-size: 13px;
+}
+</style>
 </head>
-<body>
-  <header>
- 
-  <div class="container">
-     
- 
-      <h1 style="color: white; background-color: #000000; text-align: center;">Supermercado MiTienda</h1>
- <button id="CambiarFondo">Cambiar fondo</button>
-  </div>
 
-  <div class="logo-container">
-    <img src="img/minidespensa.png" alt="Logo" class="logo">
-</div><br>
-  <nav class="navbar " style="background-color: #000000;">
- 
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Ofertas</a></li>
-      <li><a href="#carrito">Carrito</a></li>
-      <li><div class="buscador">
-        <input type="text" id="input-busqueda" placeholder="Buscar productos">
-        <ul id="sugerencias"></ul>
-    </div></li>
-  </ul>
+<body>
+
+<header>
+  <div class="logo">BRUT DEMO</div>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Promos</a>
+    <a href="#">Contacto</a>
   </nav>
-  
-  
 </header>
 
-
-
-
-<main>
-
-  <h1 style="color: white; text-align: center;">Catalogo de bebidas</h1>
-  
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-<br>
-
-
-
-
-<section class="productos">
-  <div class="grid-layout">
-    
-  <article class="producto" data-id="1" data-nombre="cerveza palermo" data-precio="2200.00">
-    
-   
-
-    
-    <div class="card" style="width: 15rem; color: black;">
-      <a href="palermo.html"><img class="mediana" src="palermo.jpg" class="card-img-top" alt="..."></a>
-      <div class="card-body">
-        <h5 class="card-title">Cerveza Palermo</h5>
-        <p class="card-text">
-          Precio: $2200</p>
-        
-      </div>
-    </div>      
-      <button class="agregar-carrito">Agregar al carrito</button><br><br>
-    </article>
-
-
-      <article class="producto" data-id="2" data-nombre="cerveza Sneider" data-precio="1600.00">
-        
-
-
-      <div class="card" style="width: 15rem; color:black ;">
-        <a href="sneider.html"><img class="mediana" src="/img/Cerveza-Schneider-Lata-473Ml-1-12957.webp"  class="card-img-top" alt="..."></a>
-        <div class="card-body">
-          <h5 class="card-title">cerveza sneider</h5>
-          <p class="card-text">Precio: $1600.00</p>
-          
-          
-        </div>
-      </div>
-
-
-
-
-
-       
-        <button class="agregar-carrito">Agregar al carrito</button>
-        
-    
-
-  </article>
-
-  <article class="producto" data-id="3" data-nombre="Lata Anstel" data-precio="1500.00">
-
-    
-    <div class="card" style="width: 15rem; color: black;">
-      <img src="img/anstel.jpg" class="mediana" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Anstel</h5>
-        <p class="card-text">Precio: Sin stock</p>
-       
-              </div>
-    </div>
-    <button class="agregar-carrito">Agregar al carrito</button><br> <br>
-
-    
-</article>
-
-<article class="producto" data-id="4" data-nombre="Manaos" data-precio="1400.00">
-
-
-  <div class="card" style="width: 15rem; color: black;">
-
-    <a href="manaos.html"><img class="mediana" src="img/manaos-productos-4.png" class="card-img-top" alt="..."></a>
-    <div class="card-body">
-      <h5 class="card-title">manaos</h5>
-      <p class="card-text">Precio: $1400.00</p>
-      
-    </div>
-  </div>
-
-
-
-  <button class="agregar-carrito">Agregar al carrito</button> <br><br>
-  
-
-  
-  
-</article>
-  
-  
-<article class="producto" data-id="6" data-nombre="coca vidrio" data-precio="2500.00">
-  
-
-
-
-  <div class="card" id="coca" style="width: 15rem; color: black;">
-    <a href="coca.html" ><img class="mediana" src="img/coca cola vidrio.jpg" class="card-img-top" alt="..."></a>
-    <div class="card-body">
-      <h5 class="card-title">coca vidrio</h5>
-      <p class="card-text">Precio: $2500.00</p>
-      
-    </div>
-    
-  </div>
-
-
-    <button class="agregar-carrito">Agregar al carrito</button>
-    
-    
-    
-    
-</article>
-
+<div class="categories">
+  <button>Vinos</button>
+  <button>Whisky</button>
+  <button>Gin</button>
+  <button>Vodka</button>
+  <button>Ron</button>
+  <button>Champagne</button>
 </div>
 
+<section class="section">
+  <h2>PROMOS</h2>
+  <div class="products">
+ <div class="product"
+     data-id="1"
+     data-nombre="Cerveza Palermo"
+     data-precio="2700">
+     
+  <img src="img/palermo.jpg">
+  <h3>Cerveza Palermo</h3>
+ <p class="price">$2700</p>
+  <button class="agregar-carrito">Agregar al carrito</button>
+</div>
+
+
+    <div class="product"
+    data-id="2"
+     data-nombre="Lata sneider"
+      data-precio="1900"
+    >
+     <img class="mediana" src="img/Cerveza-Schneider-Lata-473Ml-1-12957.webp"   alt="...">
+      <h3>Lata sneider</h3>
+      <p class="price">$1900</p>
+      <button class="agregar-carrito">Agregar al carrito</button>
+    </div>
+
+    <div class="product"
+     data-id="3"
+     data-nombre="Manaos"
+      data-precio="1700">
+     <a href="manaos.html"><img class="mediana" src="img/manaos-productos-4.png"  alt="..."></a>
+      <h3>Manaos</h3>
+      <p class="price">$1700</p>
+      <button class="agregar-carrito">Agregar al carrito</button>
+    </div>
+  </div>
+   </div>
+</section>
+
+<section class="section">
+  <h2>DESTACADOS</h2>
+  <div class="products">
+    <div class="product"
+     data-id="4"
+     data-nombre="coca vidrio"
+      data-precio="2700.00"
+    >
+      <a href="coca.html" ><img class="mediana" src="img/coca cola vidrio.jpg" class="card-img-top" alt="..."></a>
+      <h3>coca vidrio</h3>
+     <p class="price">$2700</p>
+      <button class="agregar-carrito">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423">
+      <h3>Gin Importado</h3>
+      <p class="price">$57.400</p>
+      <button class="agregar-carrito">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1582819509237-0a0f1a6d1c30">
+      <h3>Ron Añejo</h3>
+      <p class="price">$49.800</p>
+      <button class="agregar-carrito">Agregar al carrito</button>
+    </div>
+  </div>
 </section>
 
 
-  <!-- Más productos aquí -->
-
-      
-      
-  
-
-
-<script src="buscar3.js"></script>
-<script src="carrito.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-
-  <script>
-            var boton= document.getElementById("CambiarFondo");
-         function random(numeroMaximo){
-            return Math.round(Math.random()* numeroMaximo);
-         }
-
-
-            boton.addEventListener("click", function(evento){
-                console.log(evento);
-              var randomColor =[
-                random(255),
-                random(255),
-                random(255),
-
-              ];
-              document.body.style.backgroundColor= "rgb("+ randomColor[0]+ ","+ randomColor[1]+","+ randomColor[2]+")"
-            });
-
-            document.addEventListener ("cambiarFondo", function(evento){
-console.log(evento);
-console.log(evento.detail);
-            });
-            var event= new CustomEvent("cambiarFondo",{"detail":"Hola John"});
-            document.dispatchEvent(event);
-            
-        </script>
-
-
-</div id="carrito">
 
 <section  class="carrito">
   <h2>Carrito de Compra</h2>
@@ -240,7 +234,12 @@ console.log(evento.detail);
   </ul>
   <p>Total: <span id="total">0.00</span></p>
 </section>
-</main>
-</body>
 
+
+<footer>
+  © 2026 - Tienda de Bebidas Demo
+</footer>
+<script src="carrito.js"></script>
+
+</body>
 </html>
