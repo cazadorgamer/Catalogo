@@ -159,28 +159,31 @@ footer {
 <section class="section">
   <h2>PROMOS</h2>
   <div class="products">
-    <div class="product">
+    <div class="product" >
+       <article class="producto" data-id="1" data-nombre="cerveza palermo" data-precio="2200.00">
      <a href="palermo.html"><img class="mediana" src="palermo.jpg" class="card-img-top" alt="..."></a>
       <h3>Cerveza Palermo</h3>
       <div class="card-body">
       <p class="price">$2700</p>
-      <button>Agregar al carrito</button>
+      <button class="agregar-carrito" >Agregar al carrito</button>
+       </article>
     </div>
 
     <div class="product">
      <a href="sneider.html"><img class="mediana" src="/img/Cerveza-Schneider-Lata-473Ml-1-12957.webp"  class="card-img-top" alt="..."></a>
       <h3>Lata sneider</h3>
       <p class="price">$1900</p>
-      <button>Agregar al carrito</button>
+      <button class="agregar-carrito">Agregar al carrito</button>
     </div>
 
     <div class="product">
      <a href="manaos.html"><img class="mediana" src="img/manaos-productos-4.png" class="card-img-top" alt="..."></a>
       <h3>Manaos</h3>
       <p class="price">$1700</p>
-      <button>Agregar al carrito</button>
+      <button class="agregar-carrito">Agregar al carrito</button>
     </div>
   </div>
+   </div>
 </section>
 
 <section class="section">
@@ -190,21 +193,21 @@ footer {
       <a href="coca.html" ><img class="mediana" src="img/coca cola vidrio.jpg" class="card-img-top" alt="..."></a>
       <h3>coca vidrio</h3>
       <p class="price">$2700</p>
-      <button>Agregar al carrito</button>
+      <button class="agregar-carrito">Agregar al carrito</button>
     </div>
 
     <div class="product">
       <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423">
       <h3>Gin Importado</h3>
       <p class="price">$57.400</p>
-      <button>Agregar al carrito</button>
+      <button class="agregar-carrito">Agregar al carrito</button>
     </div>
 
     <div class="product">
       <img src="https://images.unsplash.com/photo-1582819509237-0a0f1a6d1c30">
       <h3>Ron Añejo</h3>
       <p class="price">$49.800</p>
-      <button>Agregar al carrito</button>
+      <button class="agregar-carrito">Agregar al carrito</button>
     </div>
   </div>
 </section>
@@ -212,11 +215,18 @@ footer {
 
 </main>
 
-</body>
+
 
 <footer>
   © 2026 - Tienda de Bebidas Demo
 </footer>
-
+<script src="carrito.js"></script>
+<section  class="carrito">
+  <h2>Carrito de Compra</h2>
+  <ul id="lista-carrito">
+      <!-- Los productos agregados aparecerán aquí -->
+  </ul>
+  <p>Total: <span id="total">0.00</span></p>
+</section>
 </body>
 </html>
